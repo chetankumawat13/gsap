@@ -10,12 +10,21 @@ const box = document.querySelector('.box')
 //   delay:1
 // })
 
-gsap.set(box,{
-  x:300
-})
+// gsap.set(box,{
+//   x:300
+// })
 
-gsap.from(box,{
-  x:800,
-  duration:1,
-  delay:0.4
+// gsap.from(box,{
+//   x:800,
+//   duration:1,
+//   delay:0.4
+// })
+
+gsap.fromTo(box,{
+  x:900,
+},{
+  x:0,
+  duration:1.3,
+  delay:0.4,
+  y:200
 })

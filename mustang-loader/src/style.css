@@ -1,0 +1,87 @@
+@font-face {
+  font-family: f1;
+  src: url('../public/MeicreSportsDemoRegular-7OLvD.otf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+
+.image-container{
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.headings{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .heading{
+    overflow: hidden;
+    h1{
+      font-size: 3rem;
+      font-family:f1;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      line-height: 5rem;
+    }
+  }
+  .subheading{
+    overflow: hidden;
+    h4{
+      font-size: 1rem;
+      font-family: monospace;
+      font-weight: 400;
+      text-transform: capitalize;
+      line-height: 0.8rem;
+    }
+  }
+
+}
+
+.overlay{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+
+  .counter{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .count{
+      font-size: 5rem;
+      font-family: f1;
+    }
+  }
+
+
+}

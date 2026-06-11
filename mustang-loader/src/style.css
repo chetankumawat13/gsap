@@ -53,7 +53,7 @@ html, body {
     overflow: hidden;
     h4{
       font-size: 1rem;
-      font-family: monospace;
+      font-family: sans-serif;
       font-weight: 400;
       text-transform: capitalize;
       line-height: 0.8rem;
